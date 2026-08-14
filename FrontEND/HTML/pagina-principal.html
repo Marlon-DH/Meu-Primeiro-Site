@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+            <!--! Aqui são os MetaDados do Site -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Site | Senac Casa Aberta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/FrontEND/CSS/edicao-codigo.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">&lt;/&gt;</div>
+      <div>
+
+        
+            <!--! Este é o nome do seu site -->
+        <strong>Meu Primeiro Site</strong>
+        <span>Casa Aberta Senac</span>
+    
+        
+    </div>
+    </div>
+    <div class="step-indicator">
+      <span class="step active">1</span>
+      <span class="line"></span>
+      <span class="step">2</span>
+      <span class="line"></span>
+      <span class="step">3</span>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="intro">
+      <div>
+        <span class="eyebrow">VOCÊ CONSEGUE!</span>
+        <h1>Crie seu primeiro site<br><span>sem precisar saber programar.</span></h1>
+        <p>Escolha algumas informações, veja o resultado ao vivo e descubra como é ter uma página feita por você.</p>
+      </div>
+      <div class="code-decoration">&lt;meu-site&gt;</div>
+    </section>
+
+
+<!--*   Personalização do Seu Site    -->
+
+    <section class="workspace">
+
+      <aside class="editor">
+        <div class="editor-header">
+          <div>
+            <h2>Monte seu site</h2>
+            <p>Preencha os campos abaixo.</p>
+          </div>
+          <span class="live-dot">AO VIVO</span>
+        </div>
+
+           <!--? Aqui você escreve o nome do site-->
+        <div class="field">
+          <label for="siteTitle">Nome do site</label>
+          <input id="siteTitle" type="text" value="Meu Espaço!" maxlength="35"
+                 placeholder="Ex.: Meu Site">
+        </div>
+
+         <!--? Aqui você escreve o seu nome-->
+        <div class="field">
+          <label for="personName">Seu nome</label>
+          <input id="personName" type="text" value="Escreva seu nome!" maxlength="45"
+                 placeholder="Ex.:Maria!">
+        </div>
+        <!--? Aqui você escreve um pouco sobre você-->
+        <div class="field">
+          <label for="about">Conte um pouco sobre você</label>
+          <textarea id="about" maxlength="180"
+            placeholder="Ex.: Gosto de música, jogos e tecnologia.">Este é o meu primeiro site! Estou aprendendo coisas novas e descobrindo o mundo da tecnologia.</textarea>
+          <small><span id="charCount">0</span>/180</small>
+        </div>
+
+         <!--? Aqui você escolhe uma cor -->
+        <div class="field">
+          <label>Escolha uma cor</label>
+          <div class="color-options">
+            <button class="color-option active" data-color="#6c5ce7" style="--color:#6c5ce7" aria-label="Roxo"></button>
+            <button class="color-option" data-color="#0984e3" style="--color:#0984e3" aria-label="Azul"></button>
+            <button class="color-option" data-color="#00b894" style="--color:#00b894" aria-label="Verde"></button>
+            <button class="color-option" data-color="#e17055" style="--color:#e17055" aria-label="Laranja"></button>
+            <button class="color-option" data-color="#d63031" style="--color:#d63031" aria-label="Vermelho"></button>
+            <button class="color-option" data-color="#fdcb6e" style="--color:#fdcb6e" aria-label="Amarelo"></button>
+          </div>
+        </div>
+
+         <!--? Aqui você coloca uma imagem -->
+        <div class="field">
+          <label for="imageInput">Sua imagem <span>(opcional)</span></label>
+          <label class="upload-box" for="imageInput">
+            <span class="upload-icon">＋</span>
+            <span><strong>Escolher imagem</strong><br><small>JPG, PNG ou WEBP</small></span>
+          </label>
+          <input id="imageInput" type="file" accept="image/*" hidden>
+        </div>
+        
+        <!--? Aqui você escreve sobre algo que você goste -->
+        <div class="field">
+          <label for="highlight">Uma coisa que você gosta</label>
+          <input id="highlight" type="text" value="🎮 Tecnologia e jogos" maxlength="40"
+                 placeholder="Ex.: 🎵 Música">
+        </div>
+        
+        <!--? Publique ou Recomeçe seu Site -->
+        <div class="actions">
+          <button id="resetBtn" class="btn secondary">↺ Recomeçar</button>
+          <button id="publishBtn" class="btn primary">🚀 Publicar meu site</button>
+        </div>
+      </aside>
+
+
+
+
+      <!--* Seu site irá aparcer Aqui -->
+
+      <section class="preview-area">
+        <div class="preview-header">
+          <span>PRÉVIA DO SEU SITE</span>
+          
+        </div>
+
+        <div id="sitePreview" class="site-preview">
+          <nav class="preview-nav">
+            <strong id="previewSiteTitle">Meu Espaço</strong>
+            <span>Início</span>
+            <span>Sobre mim</span>
+          </nav>
+
+          <div class="hero-preview">
+            <div class="hero-copy">
+              <span class="mini-tag">MEU PRIMEIRO SITE ✨</span>
+              <h2 id="previewPersonName">Olá, eu sou Alex!</h2>
+              <p id="previewAbout">Este é o meu primeiro site! Estou aprendendo coisas novas e descobrindo o mundo da tecnologia.</p>
+              <div class="interest" id="previewHighlight">🎮 Tecnologia e jogos</div>
+            </div>
+
+            <div class="photo-wrap">
+              <div id="photoPlaceholder" class="photo-placeholder">
+                <span>📷</span>
+                <small>Sua foto<br>aparecerá aqui</small>
+              </div>
+              <img id="previewImage" class="preview-image" alt="Imagem escolhida pelo visitante">
+            </div>
+          </div>
+
+          <div class="preview-footer">
+            <span>Feito por <strong id="footerName">você</strong> ✨</span>
+            <span>Meu primeiro site</span>
+          </div>
+        </div>
+
+        <div class="tip">
+          <span>💡</span>
+          <div><strong>Dica:</strong> tudo que você muda ao lado aparece aqui automaticamente!</div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+<!--* PopUp do envio de seu site -->
+  <div id="publishModal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close-modal">×</button>
+      <div class="success-icon">✓</div>
+      <h2>Seu site está pronto! 🎉</h2>
+      <p>Você acabou de criar uma página usando HTML, CSS e JavaScript — mesmo sem precisar escrever o código.</p>
+      <div class="modal-actions">
+        <button id="downloadBtn" class="btn primary">⬇ Baixar meu site</button>
+        <button id="againBtn" class="btn secondary">Continuar editando</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/BackEND/JavaScript/codigo-extra.js"></script>
+</body>
+</html>

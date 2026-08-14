@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "user-select",
+          "border: 7px solid color-mix(in srgb, var(--site-primary) 7%, white)",
+          "border: 7px solid color-mix(in srgb, var(--site-primary) 8%, white)"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
+  }
+}
