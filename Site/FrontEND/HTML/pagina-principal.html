@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/FrontEND/CSS/edicao-codigo.css">
+  <link rel="stylesheet" href="/Site/FrontEND/CSS/edicao-codigo.css">
 </head>
 <body>
 
@@ -62,21 +62,27 @@
            <!--? Aqui você escreve o nome do site-->
         <div class="field">
           <label for="siteTitle">Nome do site</label>
-          <input id="siteTitle" type="text" value="Meu Espaço!" maxlength="35"
-                 placeholder="Ex.: Meu Site">
+          <input id="siteTitle" type="text" value=
+          
+          ""
+
+           maxlength="35" placeholder="Ex.: Meu Site">
         </div>
 
          <!--? Aqui você escreve o seu nome-->
         <div class="field">
           <label for="personName">Seu nome</label>
-          <input id="personName" type="text" value="Escreva seu nome!" maxlength="45"
-                 placeholder="Ex.:Maria!">
+          <input id="personName" type="text" value=
+          
+          ""
+          
+          maxlength="45" placeholder="Ex.: Maria!">
         </div>
         <!--? Aqui você escreve um pouco sobre você-->
         <div class="field">
           <label for="about">Conte um pouco sobre você</label>
           <textarea id="about" maxlength="180"
-            placeholder="Ex.: Gosto de música, jogos e tecnologia.">Este é o meu primeiro site! Estou aprendendo coisas novas e descobrindo o mundo da tecnologia.</textarea>
+            placeholder="Ex.: Gosto de música, jogos e tecnologia."></textarea>
           <small><span id="charCount">0</span>/180</small>
         </div>
 
@@ -84,16 +90,18 @@
         <div class="field">
           <label>Escolha uma cor</label>
           <div class="color-options">
+
             <button class="color-option active" data-color="#6c5ce7" style="--color:#6c5ce7" aria-label="Roxo"></button>
             <button class="color-option" data-color="#0984e3" style="--color:#0984e3" aria-label="Azul"></button>
             <button class="color-option" data-color="#00b894" style="--color:#00b894" aria-label="Verde"></button>
             <button class="color-option" data-color="#e17055" style="--color:#e17055" aria-label="Laranja"></button>
             <button class="color-option" data-color="#d63031" style="--color:#d63031" aria-label="Vermelho"></button>
             <button class="color-option" data-color="#fdcb6e" style="--color:#fdcb6e" aria-label="Amarelo"></button>
+
           </div>
         </div>
 
-         <!--? Aqui você coloca uma imagem -->
+         <!--? Aqui você coloca uma imagem (JS)-->
         <div class="field">
           <label for="imageInput">Sua imagem <span>(opcional)</span></label>
           <label class="upload-box" for="imageInput">
@@ -103,14 +111,14 @@
           <input id="imageInput" type="file" accept="image/*" hidden>
         </div>
         
-        <!--? Aqui você escreve sobre algo que você goste -->
+        <!--? Aqui você escreve sobre algo que você goste (JS)-->
         <div class="field">
           <label for="highlight">Uma coisa que você gosta</label>
           <input id="highlight" type="text" value="🎮 Tecnologia e jogos" maxlength="40"
                  placeholder="Ex.: 🎵 Música">
         </div>
         
-        <!--? Publique ou Recomeçe seu Site -->
+        <!--? Publique ou Recomeçe seu Site (JS)-->
         <div class="actions">
           <button id="resetBtn" class="btn secondary">↺ Recomeçar</button>
           <button id="publishBtn" class="btn primary">🚀 Publicar meu site</button>
@@ -181,6 +189,6 @@
     </div>
   </div>
 
-  <script src="/BackEND/JavaScript/codigo-extra.js"></script>
+  <script src="/Site/BackEND/JavaScript/codigo-extra.js"></script>
 </body>
 </html>
